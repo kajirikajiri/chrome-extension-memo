@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "domain": "./src/domain/",
+          "data": "./src/data/",
+          "scripts": "./src/scripts/",
+          "components": "./src/components/",
+          "types": "./src/types/"
+        }
+      }
+    ]
+  ]
+}

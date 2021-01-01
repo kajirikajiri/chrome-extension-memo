@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "auto save memo",
+  "short_name": "memo",
+  "version": "1.0.0",
+  "description": "Chrome Extension with React and Typescript and tailwindcss",
+  "permissions": ["storage"],
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "auto save memo"
+  },
+  "icons": {
+    "128": "128.png",
+    "48": "48.png",
+    "16": "48.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["contentscript.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
